@@ -52,7 +52,7 @@ python-upskill-2025/
 
 ```bash
 # Клонировать и запустить пример (Python 3.11+)
-$ git clone https://github.com/<username>/python-upskill-2025.git
+$ git clone https://github.com/VecheRR/python-upskill-2025.git
 $ cd python-upskill-2025
 $ python day01_core/calc.py
 ```
