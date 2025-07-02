@@ -16,7 +16,7 @@ def string_calc(expression: str) -> float:
     except Exception as e:
         raise ValueError(f"Invalid expression: {expression}") from e
     
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover    
     expr = input("Enter a mathematical expression: ")
     try:
         result = string_calc(expr)
