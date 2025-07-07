@@ -17,9 +17,9 @@
 
 | День | Ветка (feature/…) | Темы                              | Статус |
 | :--: | :---------------- | :-------------------------------- | :----: |
-|  1   | `core-basics`     | Основы Python, исключения         |   ⬜   |
-|  2   | `oop-files`       | ООП, работа с файлами, JSON/CSV   |   ⬜   |
-|  3   | `api-requests`    | Git flow, `requests`, внешние API |   ⬜   |
+|  1   | `core-basics`     | Основы Python, исключения         |   ✅   |
+|  2   | `oop-files`       | ООП, работа с файлами, JSON/CSV   |   ✅   |
+|  3   | `api-requests`    | Git flow, `requests`, внешние API |   ✅   |
 |  4   | `sql-orm`         | SQL, SQLite, SQLAlchemy ORM       |   ⬜   |
 |  5   | `flask-todo`      | Flask, REST API (CRUD ToDo)       |   ⬜   |
 |  6   | `tests-docker`    | pytest, линтеры, Docker           |   ⬜   |
@@ -35,12 +35,15 @@ _Статусы обновляются после слияния PR в `main`._
 python-upskill-2025/
 ├─ day01_core/
 │   ├─ calc.py
-│   └─ exceptions_demo.py
+│   ├─ test_calc.py
+│   └─ try_except.py
 ├─ day02_oop/
-│   └─ ...
+│   ├─ expression_class.py
+│   ├─ expression.py
+│   └─ test_expression.py
 ├─ day03_git_api/
-│   └─ ...
-├─ requirements.txt       # появится после дня 5
+│   └─ weather_api.py
+├─ requirements.txt
 └─ README.md
 ```
 
@@ -80,7 +83,7 @@ $ docker run -p 8000:8000 upskill
 
 - [ ] PEP 8 (`flake8`, `black`)
 - [ ] Статическая типизация (`mypy`)
-- [ ] Тесты (`pytest`)
+- [x] Тесты (`pytest`)
 - [ ] Докстроки (Google style)
 - [ ] CI — GitHub Actions (на 6 день)
 
